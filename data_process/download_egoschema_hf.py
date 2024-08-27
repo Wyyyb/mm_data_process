@@ -19,7 +19,7 @@ for each in ds["test"]:
              "then select the most appropriate answer."
     inputs += "\nQuestion: " + each["question"]
     inputs += "\nOptions:\n" + "\n".join(each["option"])
-    outputs = each["option"][int(each["answer"])]
+    outputs = "The answer is: " + each["option"][int(each["answer"])]
     curr = {"video": video,
             "conversations": [{"from": "human", "value": inputs},
                               {"from": "gpt", "value": outputs}],
