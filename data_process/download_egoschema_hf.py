@@ -14,7 +14,7 @@ for each in ds["test"]:
         print("exist q_id")
     else:
         id_list.append(q_id)
-    inputs = "Based on the video content you've just observed, answer the following " \
+    inputs = "<image>\nBased on the video content you've just observed, answer the following " \
              "multiple-choice question. Carefully consider the question and options provided, " \
              "then select the most appropriate answer."
     inputs += "\nQuestion: " + each["question"]
