@@ -35,7 +35,7 @@ for each in ds["test"]:
     res.append(curr)
 
 with open("../mm_instruct_data/egoschema_instruct_data.json", "w") as fo:
-    fo.write(json.dumps(res))
+    fo.write(json.dumps(res, indent=2))
 
 
 
